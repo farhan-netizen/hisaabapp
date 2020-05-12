@@ -139,15 +139,15 @@ window.onload = (event) => {
         }
     }
     console.log(sumGiven);
-    document.getElementById("sumGiven").innerHTML = "Amount given: " + sumGiven
+    document.getElementById("sumGiven").innerHTML = "Amount given: Rs" + sumGiven
 
     console.log(sumTaken);   
-    document.getElementById("sumTaken").innerHTML = "Amount taken: " + sumTaken
+    document.getElementById("sumTaken").innerHTML = "Amount taken: Rs " + sumTaken
 
     if ((sumGiven - sumTaken) >= 0) {
-    document.getElementById("netSum").innerHTML = "NET AMOUNT: " + "<b>" + (sumGiven - sumTaken) + "</b>" + " yet to be recieved. "
+    document.getElementById("netSum").innerHTML = "NET AMOUNT: Rs " + "<b>" + (sumGiven - sumTaken) + "</b>" + " yet to be recieved. "
     } else {
-    document.getElementById("netSum").innerHTML = "NET AMOUNT: " + "<b>" + (sumGiven - sumTaken) + "</b>" + " to be return. "
+    document.getElementById("netSum").innerHTML = "NET AMOUNT: Rs " + "<b>" + (sumGiven - sumTaken) + "</b>" + " to be return. "
 
     }
   } 
