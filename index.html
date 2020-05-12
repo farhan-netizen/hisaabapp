@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Media Queries</title>
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+</style>
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="./app.js"></script>
+<script src="./angular.js"></script>
+
+<body ng-app="myApp">
+    <div>
+        <input id="give" type="text">
+        <button id="btngive" onclick="Given(value)">Given</button>
+        <input id="msg1" type="text" placeholder="kyu diya?" value="">
+        <button onclick="Message1(value)">Save</button>
+    </div>
+    <div>
+        <input id="take" type="text">
+        <button id="btntake" onclick="Taken(value)">Taken</button>
+        <input id="msg2" type="text" placeholder="lautaya?">
+        <button onclick="Message2(value)">Save</button>
+    </div>
+    <br>
+    <div id="total1"></div>
+    <br>
+    <div>
+        <button id="total" onclick="Total()">Total</button>
+        
+        <button onclick="refresh()">Reset</button>
+
+        <button id="history" onclick="history()">History</button>
+
+        <button id="dlthist" onclick="dlthist()">Delete History</button>
+
+        
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <b>History</b>
+        
+        <div id="hist"></div>
+        
+        </ul>
+    </div>
+
+    <button onclick="calculate()">calculate</button>
+    <div id="sumGiven"></div>
+    <div id="sumTaken"></div> <br>
+    <div id="netSum"></div>
+
+</body>
